@@ -7,7 +7,7 @@
 - 💬 Ask me about Automation
 - 📫 How to reach me: [Twitter](https://twitter.com/rlespinasse)
 - 😄 Pronouns: He/Him
-- ⚡ Fun fact: `I'm not young enough to known everything`
+- ⚡ Fun fact: `I'm not young enough to know everything`
 
 ### Personal projects
 
