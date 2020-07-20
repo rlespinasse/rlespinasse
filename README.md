@@ -13,9 +13,9 @@
 
 In term of automation, I play with **Github Actions**
 
-- to `slug` some environment variables : [Github Slug Action](https://github.com/marketplace/actions/github-slug),
+- to `slug` some environment variables : [Github Slug Action](https://github.com/rlespinasse/github-slug-action),
 - to expose some git commit data : [Git Commit Data Action](https://github.com/rlespinasse/git-commit-data-action),
-- to add track capabilities between issues : [Issues Tracker Action](https://github.com/marketplace/actions/issues-tracker).
+- to add track capabilities between issues : [Issues Tracker Action](https://github.com/rlespinasse/issues-tracker-action).
 
 And also
 
