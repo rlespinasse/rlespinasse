@@ -21,10 +21,10 @@ generate_table_row_with_month() {
   local description="$2"
   local created_at="$3"
   description="${description//|/\\|}"
-  # Extract month name from created_at (e.g. 2026-03-12T... -> March)
-  local month
-  month=$(date -u -d "$created_at" '+%B')
-  echo "| [**${repo}**](https://github.com/${GITHUB_USER}/${repo}) | ![Stars](https://img.shields.io/github/stars/${GITHUB_USER}/${repo}?style=flat-square&color=58a6ff) ${description} | ${month} |"
+  # Extract month and year from created_at (e.g. 2026-03-12T... -> March 2026)
+  local created
+  created=$(date -u -d "$created_at" '+%B %Y')
+  echo "| [**${repo}**](https://github.com/${GITHUB_USER}/${repo}) | ![Stars](https://img.shields.io/github/stars/${GITHUB_USER}/${repo}?style=flat-square&color=58a6ff) ${description} | ${created} |"
 }
 
 update_highlighted_projects() {

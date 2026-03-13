@@ -36,12 +36,12 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 <!-- YEAR_PROJECTS:START -->
 | Project | Description | Created |
 |---------|-------------|---------|
-| [**morvan**](https://github.com/rlespinasse/morvan) | ![Stars](https://img.shields.io/github/stars/rlespinasse/morvan?style=flat-square&color=58a6ff) Carte interactive du parc du Morvan | March |
-| [**leaflet-atlas**](https://github.com/rlespinasse/leaflet-atlas) | ![Stars](https://img.shields.io/github/stars/rlespinasse/leaflet-atlas?style=flat-square&color=58a6ff) A config-driven Leaflet framework for building interactive GeoJSON map applications | March |
-| [**bassin-minier-unesco**](https://github.com/rlespinasse/bassin-minier-unesco) | ![Stars](https://img.shields.io/github/stars/rlespinasse/bassin-minier-unesco?style=flat-square&color=58a6ff) Carte interactive du Bassin minier du Nord-Pas de Calais, patrimoine mondial de l'UNESCO — site statique avec données ouvertes (data.gouv.fr)  | March |
-| [**github-actions-toolbox**](https://github.com/rlespinasse/github-actions-toolbox) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-actions-toolbox?style=flat-square&color=58a6ff) CLI toolbox for GitHub Actions | March |
-| [**homebrew-tap**](https://github.com/rlespinasse/homebrew-tap) | ![Stars](https://img.shields.io/github/stars/rlespinasse/homebrew-tap?style=flat-square&color=58a6ff) Homebrew tap for installing @rlespinasse tools and utilities | March |
-| [**agent-skills**](https://github.com/rlespinasse/agent-skills) | ![Stars](https://img.shields.io/github/stars/rlespinasse/agent-skills?style=flat-square&color=58a6ff) A collection of Agent Skills for AI coding assistants (Claude, Cursor, Copilot). Following agentskills.io specification. | February |
+| [**morvan**](https://github.com/rlespinasse/morvan) | ![Stars](https://img.shields.io/github/stars/rlespinasse/morvan?style=flat-square&color=58a6ff) Carte interactive du parc du Morvan | March 2026 |
+| [**leaflet-atlas**](https://github.com/rlespinasse/leaflet-atlas) | ![Stars](https://img.shields.io/github/stars/rlespinasse/leaflet-atlas?style=flat-square&color=58a6ff) A config-driven Leaflet framework for building interactive GeoJSON map applications | March 2026 |
+| [**bassin-minier-unesco**](https://github.com/rlespinasse/bassin-minier-unesco) | ![Stars](https://img.shields.io/github/stars/rlespinasse/bassin-minier-unesco?style=flat-square&color=58a6ff) Carte interactive du Bassin minier du Nord-Pas de Calais, patrimoine mondial de l'UNESCO — site statique avec données ouvertes (data.gouv.fr)  | March 2026 |
+| [**github-actions-toolbox**](https://github.com/rlespinasse/github-actions-toolbox) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-actions-toolbox?style=flat-square&color=58a6ff) CLI toolbox for GitHub Actions | March 2026 |
+| [**homebrew-tap**](https://github.com/rlespinasse/homebrew-tap) | ![Stars](https://img.shields.io/github/stars/rlespinasse/homebrew-tap?style=flat-square&color=58a6ff) Homebrew tap for installing @rlespinasse tools and utilities | March 2026 |
+| [**agent-skills**](https://github.com/rlespinasse/agent-skills) | ![Stars](https://img.shields.io/github/stars/rlespinasse/agent-skills?style=flat-square&color=58a6ff) A collection of Agent Skills for AI coding assistants (Claude, Cursor, Copilot). Following agentskills.io specification. | February 2026 |
 <!-- YEAR_PROJECTS:END -->
 
 ---
