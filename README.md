@@ -22,11 +22,11 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 <!-- HIGHLIGHTED_PROJECTS:START -->
 | Project | Description |
 |---------|-------------|
-| [**github-slug-action**](https://github.com/rlespinasse/github-slug-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-slug-action?style=flat-square&color=58a6ff) Expose slug values of GitHub environment variables |
-| [**drawio-export**](https://github.com/rlespinasse/drawio-export) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export?style=flat-square&color=58a6ff) Export Draw.io diagrams using Docker |
+| [**github-slug-action**](https://github.com/rlespinasse/github-slug-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-slug-action?style=flat-square&color=58a6ff) GitHub Action to expose slug value of GitHub environment variables inside your GitHub workflow |
+| [**drawio-export**](https://github.com/rlespinasse/drawio-export) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export?style=flat-square&color=58a6ff) Export Draw.io diagrams using docker |
 | [**docker-drawio-desktop-headless**](https://github.com/rlespinasse/docker-drawio-desktop-headless) | ![Stars](https://img.shields.io/github/stars/rlespinasse/docker-drawio-desktop-headless?style=flat-square&color=58a6ff) Headless version of drawio-desktop |
-| [**drawio-export-action**](https://github.com/rlespinasse/drawio-export-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export-action?style=flat-square&color=58a6ff) GitHub Action for exporting Draw.io files |
-| [**drawio-exporter**](https://github.com/rlespinasse/drawio-exporter) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-exporter?style=flat-square&color=58a6ff) CLI tool for Draw.io file exports, written in Rust |
+| [**git-commit-data-action**](https://github.com/rlespinasse/git-commit-data-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/git-commit-data-action?style=flat-square&color=58a6ff) Action to expose git commit info |
+| [**drawio-export-action**](https://github.com/rlespinasse/drawio-export-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export-action?style=flat-square&color=58a6ff) GitHub Action To Export Draw.io Files |
 <!-- HIGHLIGHTED_PROJECTS:END -->
 
 ---
@@ -36,12 +36,12 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 <!-- YEAR_PROJECTS:START -->
 | Project | Description |
 |---------|-------------|
-| [**agent-skills**](https://github.com/rlespinasse/agent-skills) | ![Stars](https://img.shields.io/github/stars/rlespinasse/agent-skills?style=flat-square&color=58a6ff) A collection of Agent Skills for AI coding assistants (Claude, Cursor, Copilot) |
+| [**morvan**](https://github.com/rlespinasse/morvan) | ![Stars](https://img.shields.io/github/stars/rlespinasse/morvan?style=flat-square&color=58a6ff) Carte interactive du parc du Morvan |
+| [**leaflet-atlas**](https://github.com/rlespinasse/leaflet-atlas) | ![Stars](https://img.shields.io/github/stars/rlespinasse/leaflet-atlas?style=flat-square&color=58a6ff) A config-driven Leaflet framework for building interactive GeoJSON map applications |
+| [**bassin-minier-unesco**](https://github.com/rlespinasse/bassin-minier-unesco) | ![Stars](https://img.shields.io/github/stars/rlespinasse/bassin-minier-unesco?style=flat-square&color=58a6ff) Carte interactive du Bassin minier du Nord-Pas de Calais, patrimoine mondial de l'UNESCO — site statique avec données ouvertes (data.gouv.fr)  |
 | [**github-actions-toolbox**](https://github.com/rlespinasse/github-actions-toolbox) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-actions-toolbox?style=flat-square&color=58a6ff) CLI toolbox for GitHub Actions |
 | [**homebrew-tap**](https://github.com/rlespinasse/homebrew-tap) | ![Stars](https://img.shields.io/github/stars/rlespinasse/homebrew-tap?style=flat-square&color=58a6ff) Homebrew tap for installing @rlespinasse tools and utilities |
-| [**bassin-minier-unesco**](https://github.com/rlespinasse/bassin-minier-unesco) | ![Stars](https://img.shields.io/github/stars/rlespinasse/bassin-minier-unesco?style=flat-square&color=58a6ff) Carte interactive du Bassin minier du Nord-Pas de Calais, patrimoine mondial de l'UNESCO |
-| [**leaflet-atlas**](https://github.com/rlespinasse/leaflet-atlas) | ![Stars](https://img.shields.io/github/stars/rlespinasse/leaflet-atlas?style=flat-square&color=58a6ff) A config-driven Leaflet framework for building interactive GeoJSON map applications |
-| [**morvan**](https://github.com/rlespinasse/morvan) | ![Stars](https://img.shields.io/github/stars/rlespinasse/morvan?style=flat-square&color=58a6ff) |
+| [**agent-skills**](https://github.com/rlespinasse/agent-skills) | ![Stars](https://img.shields.io/github/stars/rlespinasse/agent-skills?style=flat-square&color=58a6ff) A collection of Agent Skills for AI coding assistants (Claude, Cursor, Copilot). Following agentskills.io specification. |
 <!-- YEAR_PROJECTS:END -->
 
 ---
