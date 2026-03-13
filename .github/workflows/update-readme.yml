@@ -1,6 +1,11 @@
 name: Update README
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-readme.yml'
+      - '.github/scripts/update-readme.sh'
   schedule:
     - cron: '0 6 * * 1' # Weekly on Monday at 06:00 UTC
   workflow_dispatch: # Manual trigger
