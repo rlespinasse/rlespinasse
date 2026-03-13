@@ -20,13 +20,13 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 #### Highlighted Projects
 
 <!-- HIGHLIGHTED_PROJECTS:START -->
-| Project | Description |
-|---------|-------------|
-| [**github-slug-action**](https://github.com/rlespinasse/github-slug-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-slug-action?style=flat-square&color=58a6ff) GitHub Action to expose slug value of GitHub environment variables inside your GitHub workflow |
-| [**drawio-export**](https://github.com/rlespinasse/drawio-export) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export?style=flat-square&color=58a6ff) Export Draw.io diagrams using docker |
-| [**docker-drawio-desktop-headless**](https://github.com/rlespinasse/docker-drawio-desktop-headless) | ![Stars](https://img.shields.io/github/stars/rlespinasse/docker-drawio-desktop-headless?style=flat-square&color=58a6ff) Headless version of drawio-desktop |
-| [**git-commit-data-action**](https://github.com/rlespinasse/git-commit-data-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/git-commit-data-action?style=flat-square&color=58a6ff) Action to expose git commit info |
-| [**drawio-export-action**](https://github.com/rlespinasse/drawio-export-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export-action?style=flat-square&color=58a6ff) GitHub Action To Export Draw.io Files |
+| Project | Description | Created |
+|---------|-------------|---------|
+| [**github-slug-action**](https://github.com/rlespinasse/github-slug-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-slug-action?style=flat-square&color=58a6ff) GitHub Action to expose slug value of GitHub environment variables inside your GitHub workflow | November 2019 |
+| [**drawio-export**](https://github.com/rlespinasse/drawio-export) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export?style=flat-square&color=58a6ff) Export Draw.io diagrams using docker | April 2020 |
+| [**docker-drawio-desktop-headless**](https://github.com/rlespinasse/docker-drawio-desktop-headless) | ![Stars](https://img.shields.io/github/stars/rlespinasse/docker-drawio-desktop-headless?style=flat-square&color=58a6ff) Headless version of drawio-desktop | January 2021 |
+| [**drawio-export-action**](https://github.com/rlespinasse/drawio-export-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export-action?style=flat-square&color=58a6ff) GitHub Action To Export Draw.io Files | April 2021 |
+| [**git-commit-data-action**](https://github.com/rlespinasse/git-commit-data-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/git-commit-data-action?style=flat-square&color=58a6ff) Action to expose git commit info | May 2020 |
 <!-- HIGHLIGHTED_PROJECTS:END -->
 
 ---
