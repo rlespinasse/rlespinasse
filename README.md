@@ -31,7 +31,7 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 
 ---
 
-#### 2026 Projects
+#### Recent Projects
 
 <!-- YEAR_PROJECTS:START -->
 | Project | Description | Created |
