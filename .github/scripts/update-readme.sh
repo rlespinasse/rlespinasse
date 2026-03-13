@@ -31,20 +31,20 @@ update_highlighted_projects() {
   local tmpfile
   tmpfile=$(mktemp)
 
-  # Fetch all public non-fork repos, output: stars<TAB>repo_name<TAB>description
+  # Fetch all public non-fork repos, output: stars<TAB>created_at<TAB>repo_name<TAB>description
   gh api "users/${GITHUB_USER}/repos" \
     --paginate \
-    --jq '.[] | select(.fork == false and .private == false) | [(.stargazers_count | tostring), .name, (.description // "")] | @tsv' \
+    --jq '.[] | select(.fork == false and .private == false) | [(.stargazers_count | tostring), .created_at, .name, (.description // "")] | @tsv' \
     > "$tmpfile"
 
   local table_content
-  table_content="| Project | Description |
-|---------|-------------|"
+  table_content="| Project | Description | Created |
+|---------|-------------|---------|"
 
   # Sort by stars descending, take top N
-  while IFS=$'\t' read -r stars repo description; do
+  while IFS=$'\t' read -r stars created_at repo description; do
     table_content="${table_content}
-$(generate_table_row "$repo" "$description")"
+$(generate_table_row_with_month "$repo" "$description" "$created_at")"
   done < <(sort -t$'\t' -k1 -nr "$tmpfile" | head -n "$HIGHLIGHTED_COUNT")
 
   rm "$tmpfile"
