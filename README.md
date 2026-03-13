@@ -42,6 +42,8 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 | [**github-actions-toolbox**](https://github.com/rlespinasse/github-actions-toolbox) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-actions-toolbox?style=flat-square&color=58a6ff) CLI toolbox for GitHub Actions | March 2026 |
 | [**homebrew-tap**](https://github.com/rlespinasse/homebrew-tap) | ![Stars](https://img.shields.io/github/stars/rlespinasse/homebrew-tap?style=flat-square&color=58a6ff) Homebrew tap for installing @rlespinasse tools and utilities | March 2026 |
 | [**agent-skills**](https://github.com/rlespinasse/agent-skills) | ![Stars](https://img.shields.io/github/stars/rlespinasse/agent-skills?style=flat-square&color=58a6ff) A collection of Agent Skills for AI coding assistants (Claude, Cursor, Copilot). Following agentskills.io specification. | February 2026 |
+| [**numeronym**](https://github.com/rlespinasse/numeronym) | ![Stars](https://img.shields.io/github/stars/rlespinasse/numeronym?style=flat-square&color=58a6ff) Generate numeronyms | August 2025 |
+| [**textlint-rule-link-title-case**](https://github.com/rlespinasse/textlint-rule-link-title-case) | ![Stars](https://img.shields.io/github/stars/rlespinasse/textlint-rule-link-title-case?style=flat-square&color=58a6ff) Enforce AP Style title case for link text and titles in Markdown documents | March 2025 |
 <!-- YEAR_PROJECTS:END -->
 
 ---
