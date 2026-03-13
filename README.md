@@ -19,6 +19,7 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 
 #### Highlighted Projects
 
+<!-- HIGHLIGHTED_PROJECTS:START -->
 | Project | Description |
 |---------|-------------|
 | [**github-slug-action**](https://github.com/rlespinasse/github-slug-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-slug-action?style=flat-square&color=58a6ff) Expose slug values of GitHub environment variables |
@@ -26,11 +27,13 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 | [**docker-drawio-desktop-headless**](https://github.com/rlespinasse/docker-drawio-desktop-headless) | ![Stars](https://img.shields.io/github/stars/rlespinasse/docker-drawio-desktop-headless?style=flat-square&color=58a6ff) Headless version of drawio-desktop |
 | [**drawio-export-action**](https://github.com/rlespinasse/drawio-export-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export-action?style=flat-square&color=58a6ff) GitHub Action for exporting Draw.io files |
 | [**drawio-exporter**](https://github.com/rlespinasse/drawio-exporter) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-exporter?style=flat-square&color=58a6ff) CLI tool for Draw.io file exports, written in Rust |
+<!-- HIGHLIGHTED_PROJECTS:END -->
 
 ---
 
 #### 2026 Projects
 
+<!-- YEAR_PROJECTS:START -->
 | Project | Description |
 |---------|-------------|
 | [**agent-skills**](https://github.com/rlespinasse/agent-skills) | ![Stars](https://img.shields.io/github/stars/rlespinasse/agent-skills?style=flat-square&color=58a6ff) A collection of Agent Skills for AI coding assistants (Claude, Cursor, Copilot) |
@@ -39,6 +42,7 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 | [**bassin-minier-unesco**](https://github.com/rlespinasse/bassin-minier-unesco) | ![Stars](https://img.shields.io/github/stars/rlespinasse/bassin-minier-unesco?style=flat-square&color=58a6ff) Carte interactive du Bassin minier du Nord-Pas de Calais, patrimoine mondial de l'UNESCO |
 | [**leaflet-atlas**](https://github.com/rlespinasse/leaflet-atlas) | ![Stars](https://img.shields.io/github/stars/rlespinasse/leaflet-atlas?style=flat-square&color=58a6ff) A config-driven Leaflet framework for building interactive GeoJSON map applications |
 | [**morvan**](https://github.com/rlespinasse/morvan) | ![Stars](https://img.shields.io/github/stars/rlespinasse/morvan?style=flat-square&color=58a6ff) |
+<!-- YEAR_PROJECTS:END -->
 
 ---
 
