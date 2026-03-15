@@ -36,6 +36,7 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 <!-- YEAR_PROJECTS:START -->
 | Project | Description | Created |
 |---------|-------------|---------|
+| [**le-petit-coloriste**](https://github.com/rlespinasse/le-petit-coloriste) | ![Stars](https://img.shields.io/github/stars/rlespinasse/le-petit-coloriste?style=flat-square&color=58a6ff) Le Petit Coloriste — Une Gem Google Gemini pour générer des pages de coloriage par IA pour les enfants | March 2026 |
 | [**morvan**](https://github.com/rlespinasse/morvan) | ![Stars](https://img.shields.io/github/stars/rlespinasse/morvan?style=flat-square&color=58a6ff) Carte interactive du parc du Morvan | March 2026 |
 | [**leaflet-atlas**](https://github.com/rlespinasse/leaflet-atlas) | ![Stars](https://img.shields.io/github/stars/rlespinasse/leaflet-atlas?style=flat-square&color=58a6ff) A config-driven Leaflet framework for building interactive GeoJSON map applications | March 2026 |
 | [**bassin-minier-unesco**](https://github.com/rlespinasse/bassin-minier-unesco) | ![Stars](https://img.shields.io/github/stars/rlespinasse/bassin-minier-unesco?style=flat-square&color=58a6ff) Carte interactive du Bassin minier du Nord-Pas de Calais, patrimoine mondial de l'UNESCO — site statique avec données ouvertes (data.gouv.fr)  | March 2026 |
@@ -43,7 +44,6 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 | [**homebrew-tap**](https://github.com/rlespinasse/homebrew-tap) | ![Stars](https://img.shields.io/github/stars/rlespinasse/homebrew-tap?style=flat-square&color=58a6ff) Homebrew tap for installing @rlespinasse tools and utilities | March 2026 |
 | [**agent-skills**](https://github.com/rlespinasse/agent-skills) | ![Stars](https://img.shields.io/github/stars/rlespinasse/agent-skills?style=flat-square&color=58a6ff) A collection of Agent Skills for AI coding assistants (Claude, Cursor, Copilot). Following agentskills.io specification. | February 2026 |
 | [**numeronym**](https://github.com/rlespinasse/numeronym) | ![Stars](https://img.shields.io/github/stars/rlespinasse/numeronym?style=flat-square&color=58a6ff) Generate numeronyms | August 2025 |
-| [**textlint-rule-link-title-case**](https://github.com/rlespinasse/textlint-rule-link-title-case) | ![Stars](https://img.shields.io/github/stars/rlespinasse/textlint-rule-link-title-case?style=flat-square&color=58a6ff) Enforce AP Style title case for link text and titles in Markdown documents | March 2025 |
 <!-- YEAR_PROJECTS:END -->
 
 ---
