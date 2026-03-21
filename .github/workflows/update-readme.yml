@@ -26,7 +26,9 @@ jobs:
           go-version-file: .github/scripts/update-readme/go.mod
 
       - name: Install ghat
-        run: brew install rlespinasse/tap/github-actions-toolbox
+        run: |
+          go install github.com/rlespinasse/github-actions-toolbox@latest
+          ln -s $(go env GOPATH)/bin/github-actions-toolbox $(go env GOPATH)/bin/ghat
 
       - name: Update README sections
         env:
