@@ -22,11 +22,11 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 <!-- HIGHLIGHTED_PROJECTS:START -->
 | Project | Description | Created |
 |---------|-------------|---------|
-| [**github-slug-action**](https://github.com/rlespinasse/github-slug-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-slug-action?style=flat-square&color=58a6ff) GitHub Action to expose slug value of GitHub environment variables inside your GitHub workflow | November 2019 |
-| [**drawio-export**](https://github.com/rlespinasse/drawio-export) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export?style=flat-square&color=58a6ff) Export Draw.io diagrams using docker | April 2020 |
-| [**docker-drawio-desktop-headless**](https://github.com/rlespinasse/docker-drawio-desktop-headless) | ![Stars](https://img.shields.io/github/stars/rlespinasse/docker-drawio-desktop-headless?style=flat-square&color=58a6ff) Headless version of drawio-desktop | January 2021 |
+| [**antora-in-action**](https://github.com/rlespinasse/antora-in-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/antora-in-action?style=flat-square&color=58a6ff) Content of my talk "antora-in-action"  | November 2018 |
 | [**drawio-export-action**](https://github.com/rlespinasse/drawio-export-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export-action?style=flat-square&color=58a6ff) GitHub Action To Export Draw.io Files | April 2021 |
 | [**git-commit-data-action**](https://github.com/rlespinasse/git-commit-data-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/git-commit-data-action?style=flat-square&color=58a6ff) Action to expose git commit info | May 2020 |
+| [**github-slug-action**](https://github.com/rlespinasse/github-slug-action) | ![Stars](https://img.shields.io/github/stars/rlespinasse/github-slug-action?style=flat-square&color=58a6ff) GitHub Action to expose slug value of GitHub environment variables inside your GitHub workflow | November 2019 |
+| [**drawio-export**](https://github.com/rlespinasse/drawio-export) | ![Stars](https://img.shields.io/github/stars/rlespinasse/drawio-export?style=flat-square&color=58a6ff) Export Draw.io diagrams using docker | April 2020 |
 <!-- HIGHLIGHTED_PROJECTS:END -->
 
 ---
@@ -36,6 +36,8 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 <!-- YEAR_PROJECTS:START -->
 | Project | Description | Created |
 |---------|-------------|---------|
+| [**le-petit-aquarium-du-marais**](https://github.com/rlespinasse/le-petit-aquarium-du-marais) | ![Stars](https://img.shields.io/github/stars/rlespinasse/le-petit-aquarium-du-marais?style=flat-square&color=58a6ff) un aquarium collaboratif rempli de dessins de poissons faits par des enfants | March 2026 |
+| [**zero-token-architecture**](https://github.com/rlespinasse/zero-token-architecture) | ![Stars](https://img.shields.io/github/stars/rlespinasse/zero-token-architecture?style=flat-square&color=58a6ff) Use your brain | March 2026 |
 | [**le-petit-coloriste**](https://github.com/rlespinasse/le-petit-coloriste) | ![Stars](https://img.shields.io/github/stars/rlespinasse/le-petit-coloriste?style=flat-square&color=58a6ff) Le Petit Coloriste — Une Gem Google Gemini pour générer des pages de coloriage par IA pour les enfants | March 2026 |
 | [**morvan**](https://github.com/rlespinasse/morvan) | ![Stars](https://img.shields.io/github/stars/rlespinasse/morvan?style=flat-square&color=58a6ff) Carte interactive du parc du Morvan | March 2026 |
 | [**leaflet-atlas**](https://github.com/rlespinasse/leaflet-atlas) | ![Stars](https://img.shields.io/github/stars/rlespinasse/leaflet-atlas?style=flat-square&color=58a6ff) A config-driven Leaflet framework for building interactive GeoJSON map applications | March 2026 |
