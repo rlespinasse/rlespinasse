@@ -26,16 +26,20 @@ jobs:
           go-version-file: .github/scripts/update-readme/go.mod
 
       - name: Install ghat
+        shell: bash
         run: |
           go install github.com/rlespinasse/github-actions-toolbox@latest
           ln -s $(go env GOPATH)/bin/github-actions-toolbox $(go env GOPATH)/bin/ghat
 
       - name: Update README sections
+        shell: bash
+        working-directory: .github/scripts/update-readme
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: go run ./.github/scripts/update-readme/
+        run: go run . ../../../README.md
 
       - name: Commit and push if changed
+        shell: bash
         run: |
           git diff --quiet README.md && exit 0
           git config user.name "github-actions[bot]"

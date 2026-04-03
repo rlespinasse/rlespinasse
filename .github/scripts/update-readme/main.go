@@ -14,7 +14,7 @@ import (
 
 const (
 	githubUser         = "rlespinasse"
-	readmeFile         = "README.md"
+	defaultReadmeFile  = "README.md"
 	highlightedCount   = 5
 	actionSlots        = 3
 	starSlots          = highlightedCount - actionSlots
@@ -37,6 +37,11 @@ type repo struct {
 
 func main() {
 	log.SetFlags(0)
+
+	readmeFile := defaultReadmeFile
+	if len(os.Args) > 1 {
+		readmeFile = os.Args[1]
+	}
 
 	repos, err := fetchRepos()
 	if err != nil {
