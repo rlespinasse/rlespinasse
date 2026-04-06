@@ -37,7 +37,6 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 | Project | Description | Created |
 |---------|-------------|---------|
 | [**le-petit-aquarium-du-marais**](https://github.com/rlespinasse/le-petit-aquarium-du-marais) | ![Stars](https://img.shields.io/github/stars/rlespinasse/le-petit-aquarium-du-marais?style=flat-square&color=58a6ff) un aquarium collaboratif rempli de dessins de poissons faits par des enfants | March 2026 |
-| [**zero-token-architecture**](https://github.com/rlespinasse/zero-token-architecture) | ![Stars](https://img.shields.io/github/stars/rlespinasse/zero-token-architecture?style=flat-square&color=58a6ff) Use your brain | March 2026 |
 | [**le-petit-coloriste**](https://github.com/rlespinasse/le-petit-coloriste) | ![Stars](https://img.shields.io/github/stars/rlespinasse/le-petit-coloriste?style=flat-square&color=58a6ff) Le Petit Coloriste — Une Gem Google Gemini pour générer des pages de coloriage par IA pour les enfants | March 2026 |
 | [**morvan**](https://github.com/rlespinasse/morvan) | ![Stars](https://img.shields.io/github/stars/rlespinasse/morvan?style=flat-square&color=58a6ff) Carte interactive du parc du Morvan | March 2026 |
 | [**leaflet-atlas**](https://github.com/rlespinasse/leaflet-atlas) | ![Stars](https://img.shields.io/github/stars/rlespinasse/leaflet-atlas?style=flat-square&color=58a6ff) A config-driven Leaflet framework for building interactive GeoJSON map applications | March 2026 |
