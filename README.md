@@ -36,6 +36,7 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 <!-- YEAR_PROJECTS:START -->
 | Project | Description | Created |
 |---------|-------------|---------|
+| [**mesures-anciennes**](https://github.com/rlespinasse/mesures-anciennes) | ![Stars](https://img.shields.io/github/stars/rlespinasse/mesures-anciennes?style=flat-square&color=58a6ff)  | May 2026 |
 | [**le-petit-aquarium-du-marais**](https://github.com/rlespinasse/le-petit-aquarium-du-marais) | ![Stars](https://img.shields.io/github/stars/rlespinasse/le-petit-aquarium-du-marais?style=flat-square&color=58a6ff) un aquarium collaboratif rempli de dessins de poissons faits par des enfants | March 2026 |
 | [**gem-amuse**](https://github.com/rlespinasse/gem-amuse) | ![Stars](https://img.shields.io/github/stars/rlespinasse/gem-amuse?style=flat-square&color=58a6ff) Gem'Amuse — Des Gems Google Gemini pour s'amuser et apprendre : coloriages, expériences de science, défis rigolos et chasses aux trésors | March 2026 |
 | [**morvan**](https://github.com/rlespinasse/morvan) | ![Stars](https://img.shields.io/github/stars/rlespinasse/morvan?style=flat-square&color=58a6ff) Carte interactive du parc du Morvan | March 2026 |
