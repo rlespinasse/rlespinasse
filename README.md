@@ -36,6 +36,7 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 <!-- YEAR_PROJECTS:START -->
 | Project | Description | Created |
 |---------|-------------|---------|
+| [**geopages-template**](https://github.com/rlespinasse/geopages-template) | ![Stars](https://img.shields.io/github/stars/rlespinasse/geopages-template?style=flat-square&color=58a6ff) Template for creating interactive geodata atlases with Vite, TypeScript, and Leaflet. | July 2026 |
 | [**chronomel**](https://github.com/rlespinasse/chronomel) | ![Stars](https://img.shields.io/github/stars/rlespinasse/chronomel?style=flat-square&color=58a6ff) Visionneuse temporelle des orthophotographies de la Métropole Européenne de Lille (1930-2025) | June 2026 |
 | [**le-petit-aquarium-du-marais**](https://github.com/rlespinasse/le-petit-aquarium-du-marais) | ![Stars](https://img.shields.io/github/stars/rlespinasse/le-petit-aquarium-du-marais?style=flat-square&color=58a6ff) un aquarium collaboratif rempli de dessins de poissons faits par des enfants | March 2026 |
 | [**gem-amuse**](https://github.com/rlespinasse/gem-amuse) | ![Stars](https://img.shields.io/github/stars/rlespinasse/gem-amuse?style=flat-square&color=58a6ff) Gem'Amuse — Des Gems Google Gemini pour s'amuser et apprendre : coloriages, expériences de science, défis rigolos et chasses aux trésors | March 2026 |
