@@ -4,22 +4,6 @@ I'm **Romain Lespinasse**, a developer based in Lille, France.
 
 > *I'm not young enough to know everything*
 
----
-
-<p>
-  <a href="https://github.com/rlespinasse">
-    <img src="https://img.shields.io/github/followers/rlespinasse?style=for-the-badge&label=Followers&color=58a6ff&logo=github&labelColor=252525" alt="GitHub Followers" />
-  </a>
-  <a href="https://github.com/rlespinasse?tab=repositories">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Frlespinasse&query=%24.public_repos&style=for-the-badge&label=Public%20Repos&color=58a6ff&logo=github&labelColor=252525" alt="Public Repos" />
-  </a>
-  <a href="https://git.io/streak-stats">
-    <img height="160" src="https://github-readme-streak-stats.herokuapp.com?user=rlespinasse&hide_border=true&background=00000000&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=c9d1d9" alt="GitHub Streak" />
-  </a>
-</p>
-
----
-
 #### Highlighted Projects
 
 <!-- HIGHLIGHTED_PROJECTS:START -->
