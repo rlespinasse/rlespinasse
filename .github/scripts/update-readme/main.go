@@ -117,8 +117,8 @@ func fetchDependents(repoNames []string) map[string]int {
 		return result
 	}
 
-	args := make([]string, 0, len(repoNames)+1)
-	args = append(args, "dependents")
+	args := make([]string, 0, len(repoNames)+2)
+	args = append(args, "dependents", "--detailed")
 	for _, name := range repoNames {
 		args = append(args, fmt.Sprintf("%s/%s", githubUser, name))
 	}
