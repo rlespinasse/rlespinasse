@@ -13,26 +13,24 @@ import (
 )
 
 const (
-	githubUser         = "rlespinasse"
-	defaultReadmeFile  = "README.md"
-	highlightedCount   = 60
-	actionSlots        = 0
-	starSlots          = highlightedCount - actionSlots
-	cutoffMonths       = 6
-	actionSuffix       = "-action"
-	highlightedStart   = "<!-- HIGHLIGHTED_PROJECTS:START -->"
-	highlightedEnd     = "<!-- HIGHLIGHTED_PROJECTS:END -->"
-	yearProjectsStart  = "<!-- YEAR_PROJECTS:START -->"
-	yearProjectsEnd    = "<!-- YEAR_PROJECTS:END -->"
+	githubUser        = "rlespinasse"
+	defaultReadmeFile = "README.md"
+	cutoffMonths      = 6
+	actionSuffix      = "-action"
+	highlightedStart  = "<!-- HIGHLIGHTED_PROJECTS:START -->"
+	highlightedEnd    = "<!-- HIGHLIGHTED_PROJECTS:END -->"
+	yearProjectsStart = "<!-- YEAR_PROJECTS:START -->"
+	yearProjectsEnd   = "<!-- YEAR_PROJECTS:END -->"
 )
 
 type repo struct {
-	Name       string    `json:"name"`
-	Fork       bool      `json:"fork"`
-	Private    bool      `json:"private"`
-	Stars      int       `json:"stargazers_count"`
-	CreatedAt  time.Time `json:"created_at"`
-	Description string   `json:"description"`
+	Name        string    `json:"name"`
+	Fork        bool      `json:"fork"`
+	Private     bool      `json:"private"`
+	Archived    bool      `json:"archived"`
+	Stars       int       `json:"stargazers_count"`
+	CreatedAt   time.Time `json:"created_at"`
+	Description string    `json:"description"`
 }
 
 func main() {
@@ -96,8 +94,6 @@ func fetchRepos() ([]repo, error) {
 		return nil, fmt.Errorf("gh api: %w", err)
 	}
 
-	// gh api --paginate outputs multiple JSON arrays, one per page.
-	// We need to concatenate them.
 	var allRepos []repo
 	decoder := json.NewDecoder(strings.NewReader(string(out)))
 	for decoder.More() {
@@ -140,7 +136,6 @@ func fetchDependents(repoNames []string) map[string]int {
 		fullRepo := strings.TrimSpace(parts[0])
 		countStr := strings.TrimSpace(parts[2])
 
-		// Extract repo name from "owner/repo"
 		repoName := fullRepo
 		if idx := strings.Index(fullRepo, "/"); idx >= 0 {
 			repoName = fullRepo[idx+1:]
@@ -160,42 +155,19 @@ func isAction(name string) bool {
 }
 
 func generateHighlighted(repos []repo, dependentsMap map[string]int) string {
-	// Tier 1: Top action repos by dependents count
-	var actionRepos []repo
+	var highlighted []repo
+
+	// Include only actions with > 1 star and not archived
 	for _, r := range repos {
-		if isAction(r.Name) {
-			actionRepos = append(actionRepos, r)
+		if isAction(r.Name) && r.Stars > 1 && !r.Archived {
+			highlighted = append(highlighted, r)
 		}
 	}
-	sort.Slice(actionRepos, func(i, j int) bool {
-		return dependentsMap[actionRepos[i].Name] > dependentsMap[actionRepos[j].Name]
+
+	// Sort by stars descending
+	sort.Slice(highlighted, func(i, j int) bool {
+		return highlighted[i].Stars > highlighted[j].Stars
 	})
-	if len(actionRepos) > actionSlots {
-		actionRepos = actionRepos[:actionSlots]
-	}
-
-	// Track which repos are already selected
-	selected := make(map[string]bool)
-	for _, r := range actionRepos {
-		selected[r.Name] = true
-	}
-
-	// Tier 2: Top remaining repos by stars
-	var remaining []repo
-	for _, r := range repos {
-		if !selected[r.Name] {
-			remaining = append(remaining, r)
-		}
-	}
-	sort.Slice(remaining, func(i, j int) bool {
-		return remaining[i].Stars > remaining[j].Stars
-	})
-	if len(remaining) > starSlots {
-		remaining = remaining[:starSlots]
-	}
-
-	// Combine: actions first, then by stars
-	highlighted := append(actionRepos, remaining...)
 
 	return buildTable(highlighted, dependentsMap)
 }
@@ -210,7 +182,6 @@ func generateRecent(repos []repo, dependentsMap map[string]int) string {
 		}
 	}
 
-	// Sort by creation date descending
 	sort.Slice(recent, func(i, j int) bool {
 		return recent[i].CreatedAt.After(recent[j].CreatedAt)
 	})
