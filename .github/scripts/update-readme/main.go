@@ -1,7 +1,7 @@
 package main
 
 import (
-	"bufio"
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -16,7 +16,6 @@ const (
 	githubUser        = "rlespinasse"
 	defaultReadmeFile = "README.md"
 	cutoffMonths      = 6
-	actionSuffix      = "-action"
 	highlightedStart  = "<!-- HIGHLIGHTED_PROJECTS:START -->"
 	highlightedEnd    = "<!-- HIGHLIGHTED_PROJECTS:END -->"
 	yearProjectsStart = "<!-- YEAR_PROJECTS:START -->"
@@ -54,13 +53,12 @@ func main() {
 		}
 	}
 
-	// Identify action repos and fetch dependents
-	var actionNames []string
-	for _, r := range publicRepos {
-		if isAction(r.Name) {
-			actionNames = append(actionNames, r.Name)
-		}
+	// Identify action repos dynamically by checking for action.yml / action.yaml
+	actionNames, err := detectActionRepos(publicRepos)
+	if err != nil {
+		log.Printf("Warning: failed to detect action repos via GraphQL: %v", err)
 	}
+
 	dependentsMap := fetchDependents(actionNames)
 
 	// Generate sections
@@ -107,6 +105,61 @@ func fetchRepos() ([]repo, error) {
 	return allRepos, nil
 }
 
+// detectActionRepos queries GitHub GraphQL API to check if action.yml or action.yaml exists at the repository root
+func detectActionRepos(repos []repo) ([]string, error) {
+	if len(repos) == 0 {
+		return nil, nil
+	}
+
+	var queryBuilder strings.Builder
+	queryBuilder.WriteString("query {")
+	for i, r := range repos {
+		// Valid alias name for GraphQL
+		alias := fmt.Sprintf("repo_%d", i)
+		queryBuilder.WriteString(fmt.Sprintf(`
+			%s: repository(owner: "%s", name: "%s") {
+				name
+				actionYml: object(expression: "HEAD:action.yml") { id }
+				actionYaml: object(expression: "HEAD:action.yaml") { id }
+			}`, alias, githubUser, r.Name))
+	}
+	queryBuilder.WriteString("}")
+
+	payload := map[string]string{"query": queryBuilder.String()}
+	jsonBody, err := json.Marshal(payload)
+	if err != nil {
+		return nil, err
+	}
+
+	cmd := exec.Command("gh", "api", "graphql", "--input", "-")
+	cmd.Stdin = bytes.NewReader(jsonBody)
+	out, err := cmd.Output()
+	if err != nil {
+		return nil, fmt.Errorf("gh api graphql: %w", err)
+	}
+
+	var gqlResp struct {
+		Data map[string]struct {
+			Name       string `json:"name"`
+			ActionYml  *struct{} `json:"actionYml"`
+			ActionYaml *struct{} `json:"actionYaml"`
+		} `json:"data"`
+	}
+
+	if err := json.Unmarshal(out, &gqlResp); err != nil {
+		return nil, fmt.Errorf("decode graphql response: %w", err)
+	}
+
+	var actionRepos []string
+	for _, repoData := range gqlResp.Data {
+		if repoData.ActionYml != nil || repoData.ActionYaml != nil {
+			actionRepos = append(actionRepos, repoData.Name)
+		}
+	}
+
+	return actionRepos, nil
+}
+
 func fetchDependents(repoNames []string) map[string]int {
 	result := make(map[string]int)
 	if len(repoNames) == 0 {
@@ -148,10 +201,6 @@ func fetchDependents(repoNames []string) map[string]int {
 	}
 
 	return result
-}
-
-func isAction(name string) bool {
-	return strings.HasSuffix(name, actionSuffix)
 }
 
 func generateHighlighted(repos []repo, dependentsMap map[string]int) string {
