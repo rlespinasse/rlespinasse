@@ -115,7 +115,6 @@ func detectActionRepos(repos []repo) ([]string, error) {
 	var queryBuilder strings.Builder
 	queryBuilder.WriteString("query {")
 	for i, r := range repos {
-		// Valid alias name for GraphQL
 		alias := fmt.Sprintf("repo_%d", i)
 		queryBuilder.WriteString(fmt.Sprintf(`
 			%s: repository(owner: "%s", name: "%s") {
@@ -141,7 +140,7 @@ func detectActionRepos(repos []repo) ([]string, error) {
 
 	var gqlResp struct {
 		Data map[string]struct {
-			Name       string `json:"name"`
+			Name       string    `json:"name"`
 			ActionYml  *struct{} `json:"actionYml"`
 			ActionYaml *struct{} `json:"actionYaml"`
 		} `json:"data"`
@@ -207,9 +206,9 @@ func fetchDependents(repoNames []string) map[string]int {
 func generateHighlighted(repos []repo, dependentsMap map[string]int) string {
 	var highlighted []repo
 
-	// Include all non-archived repos with > 1 star
+	// Include non-archived repos with >= 1 star OR > 0 dependents
 	for _, r := range repos {
-		if r.Stars > 1 && !r.Archived {
+		if !r.Archived && (r.Stars >= 1 || dependentsMap[r.Name] > 0) {
 			highlighted = append(highlighted, r)
 		}
 	}
