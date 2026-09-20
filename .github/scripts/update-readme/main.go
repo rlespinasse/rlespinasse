@@ -157,9 +157,9 @@ func isAction(name string) bool {
 func generateHighlighted(repos []repo, dependentsMap map[string]int) string {
 	var highlighted []repo
 
-	// Include only actions with > 1 star and not archived
+	// Include all non-archived repos with > 1 star
 	for _, r := range repos {
-		if isAction(r.Name) && r.Stars > 1 && !r.Archived {
+		if r.Stars > 1 && !r.Archived {
 			highlighted = append(highlighted, r)
 		}
 	}
