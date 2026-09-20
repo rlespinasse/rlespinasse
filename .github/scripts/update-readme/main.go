@@ -18,7 +18,7 @@ const (
 	highlightedCount   = 5
 	actionSlots        = 3
 	starSlots          = highlightedCount - actionSlots
-	cutoffMonths       = 12
+	cutoffMonths       = 6
 	actionSuffix       = "-action"
 	highlightedStart   = "<!-- HIGHLIGHTED_PROJECTS:START -->"
 	highlightedEnd     = "<!-- HIGHLIGHTED_PROJECTS:END -->"
