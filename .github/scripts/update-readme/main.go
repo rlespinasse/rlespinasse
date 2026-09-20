@@ -15,8 +15,8 @@ import (
 const (
 	githubUser         = "rlespinasse"
 	defaultReadmeFile  = "README.md"
-	highlightedCount   = 5
-	actionSlots        = 3
+	highlightedCount   = 60
+	actionSlots        = 0
 	starSlots          = highlightedCount - actionSlots
 	cutoffMonths       = 6
 	actionSuffix       = "-action"
