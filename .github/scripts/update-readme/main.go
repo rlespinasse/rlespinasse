@@ -54,13 +54,13 @@ func main() {
 		}
 	}
 
-	// Identify action repos dynamically by checking for action.yml / action.yaml
-	actionNames, err := detectActionRepos(publicRepos)
-	if err != nil {
-		log.Printf("Warning: failed to detect action repos via GraphQL: %v", err)
+	// Extract all public repo names to check dependents for any repository
+	var allRepoNames []string
+	for _, r := range publicRepos {
+		allRepoNames = append(allRepoNames, r.Name)
 	}
 
-	dependentsMap := fetchDependents(actionNames)
+	dependentsMap := fetchDependents(allRepoNames)
 
 	// Generate sections
 	highlightedContent := generateHighlighted(publicRepos, dependentsMap)
@@ -104,60 +104,6 @@ func fetchRepos() ([]repo, error) {
 	}
 
 	return allRepos, nil
-}
-
-// detectActionRepos queries GitHub GraphQL API to check if action.yml or action.yaml exists at the repository root
-func detectActionRepos(repos []repo) ([]string, error) {
-	if len(repos) == 0 {
-		return nil, nil
-	}
-
-	var queryBuilder strings.Builder
-	queryBuilder.WriteString("query {")
-	for i, r := range repos {
-		alias := fmt.Sprintf("repo_%d", i)
-		queryBuilder.WriteString(fmt.Sprintf(`
-			%s: repository(owner: "%s", name: "%s") {
-				name
-				actionYml: object(expression: "HEAD:action.yml") { id }
-				actionYaml: object(expression: "HEAD:action.yaml") { id }
-			}`, alias, githubUser, r.Name))
-	}
-	queryBuilder.WriteString("}")
-
-	payload := map[string]string{"query": queryBuilder.String()}
-	jsonBody, err := json.Marshal(payload)
-	if err != nil {
-		return nil, err
-	}
-
-	cmd := exec.Command("gh", "api", "graphql", "--input", "-")
-	cmd.Stdin = bytes.NewReader(jsonBody)
-	out, err := cmd.Output()
-	if err != nil {
-		return nil, fmt.Errorf("gh api graphql: %w", err)
-	}
-
-	var gqlResp struct {
-		Data map[string]struct {
-			Name       string    `json:"name"`
-			ActionYml  *struct{} `json:"actionYml"`
-			ActionYaml *struct{} `json:"actionYaml"`
-		} `json:"data"`
-	}
-
-	if err := json.Unmarshal(out, &gqlResp); err != nil {
-		return nil, fmt.Errorf("decode graphql response: %w", err)
-	}
-
-	var actionRepos []string
-	for _, repoData := range gqlResp.Data {
-		if repoData.ActionYml != nil || repoData.ActionYaml != nil {
-			actionRepos = append(actionRepos, repoData.Name)
-		}
-	}
-
-	return actionRepos, nil
 }
 
 func fetchDependents(repoNames []string) map[string]int {
@@ -206,9 +152,9 @@ func fetchDependents(repoNames []string) map[string]int {
 func generateHighlighted(repos []repo, dependentsMap map[string]int) string {
 	var highlighted []repo
 
-	// Include non-archived repos with >= 1 star OR > 0 dependents
+	// Include non-archived repos with > 1 star OR >= 1 dependent
 	for _, r := range repos {
-		if !r.Archived && (r.Stars >= 1 || dependentsMap[r.Name] > 0) {
+		if !r.Archived && (r.Stars > 1 || dependentsMap[r.Name] >= 1) {
 			highlighted = append(highlighted, r)
 		}
 	}
