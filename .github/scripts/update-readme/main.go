@@ -210,8 +210,9 @@ func formatRow(r repo, dependents int) string {
 
 	// Detect if repo is a Docker image repository (by name or description) and append Docker Pulls badge
 	if isDockerRepo(r) {
+		imageName := strings.TrimPrefix(r.Name, "docker-")
 		badges += fmt.Sprintf(" [![Docker Pulls](https://img.shields.io/docker/pulls/%s/%s?style=flat-square&logo=docker&logoColor=white&color=2496ed)](https://hub.docker.com/r/%s/%s)",
-			githubUser, r.Name, githubUser, r.Name)
+			githubUser, imageName, githubUser, imageName)
 	}
 
 	return fmt.Sprintf("| [**%s**](https://github.com/%s/%s) | %s %s | %s |",
